@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../styles/App.css';
+import Events from './Events'
+import Search from './Search'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+  state = {
+    searchFilter: ""
   }
+
+  onChange = e => {
+    this.setState({ searchFilter: e.currentTarget.value.split("").join("(?:\\s)?") })
+  }
+
+  render = () => (
+    <div className="App">
+      <Search onChange={this.onChange} />
+      <Events filter={this.state.searchFilter} />
+    </div>
+  )
 }
 
 export default App;

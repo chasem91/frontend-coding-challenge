@@ -1,0 +1,46 @@
+.Event {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background-color: rgb(49, 176, 213);
+  align-items: center;
+  border-radius: 40px;
+  margin: 6px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)
+}
+
+.Event-title {
+  width: 300px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Event-times {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 300px;
+}
+
+.Event-time {
+  display: flex;
+}
+
+.Event-time-title {
+  font-weight: bold;
+  width: 50px;
+  text-align: right;
+  margin-right: 12px;
+}
+
+.Event-location {
+  width: 400px;
+}
+
+.Event-location-header {
+  font-weight: bold;
+}
+
+.Event-details {
+  width: 100px;
+}

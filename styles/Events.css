@@ -1,0 +1,27 @@
+.Events {
+  max-width: 1000px;
+}
+
+.Events-items-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.Events-sorts {
+  display: flex;
+  margin-left: 32px;
+  width: 260px;
+  justify-content: space-between;
+}
+
+.Events-sort {
+  cursor: pointer;
+}
+
+.Events-sort:hover {
+  text-decoration: underline;
+}
+
+.Events-sort-selected {
+  font-weight: bold;
+}
